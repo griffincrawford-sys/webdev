@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Card</title>
+
+        <style>
+            .cardsContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                background-color: #efefef;
+                padding: 14px;
+                margin: 12px;
+                border-radius: 16px;
+                box-shadow: 0 4px 8px #ccc;
+
+            }
+
+            .card .img {
+                width: 100%;
+                height: 300px;                
+                background-image: url(img/FernandoSucre.webp);
+                background-size: cover;
+                background-position: center;
+                border-radius: 8px;
+        
+            }
+
+            .card .Scofield { background-image: url("img/Micheal_Scofield.webp"); }
+
+            .card .tweener { background-image: url("img/tweener.jpeg"); }
+
+            .card .link { background-image: url("img/link.webp"); }
+
+            .card .desc {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 12pt;
+                margin: 8px;
+                flex-grow: 2;
+            }
+
+            .card a:link,
+            .card a:active,
+            .card a:visited {
+                display: block;
+                background-color: rgb(98, 195, 255);
+                color: rgb(0, 0, 0);
+                padding: 12px;
+                border-radius: 8px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .card a:hover,
+            .card a:focus {
+                background-color: darkblue;
+                color: white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Prison Break Characters</h1>
+
+         <div class="cardsContainer">
+         <div class="card">
+            <div class="img FernandoSucre"></div>
+            <div class="desc">
+                <p>Fernando Sucre is a fictional character from the TV series Prison Break, portrayed by actor Amaury Nolasco. He is Michael Scofield's cellmate at Fox River State Penitentiary and becomes a loyal ally in the escape plan, driven by his desire to reunite with his girlfriend, Maricruz. Sucre is known for his warmth, humor, and unwavering loyalty, providing emotional depth and a contrast to the series' intense drama</p>
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <div class="img Scofield"></div>
+            <div class="desc">
+                <p>Michael Scofield is the main protagonist of the TV series Prison Break, portrayed by actor Wentworth Miller. A structural engineer with a condition called low latent inhibition, he deliberately gets himself incarcerated to orchestrate an elaborate escape plan for his wrongfully convicted brother, Lincoln Burrows. His condition allows him to process environmental details that others miss, making him a genius strategist and problem-solver.</p>
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="cardsContainer">
+         <div class="card">
+            <div class="img tweener"></div>
+            <div class="desc">
+                <p>David "Tweener" Apolskis is a fictional character from the TV series Prison Break, played by actor Lane Garrison. He is a young, immature inmate known for his immaturity and for being a "rat" who betrays the main characters for his own benefit, though some viewers see him as a tragic figure who was manipulated and ultimately met a sad end.</p>
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="cardsContainer">
+         <div class="card">
+            <div class="img link"></div>
+            <div class="desc">
+                <p>Lincoln Burrows is a central character in the TV series Prison Break, played by actor Dominic Purcell. He is a wrongfully convicted man on death row for the murder of the Vice President's brother, a crime orchestrated by a shadowy organization known as "The Company". His younger brother, Michael Scofield, devises a plan to break him out of prison, forming the core of the show's plot.</p>
+            </div>
+            <a href="#">Read More</a>
+
+        </div>
+    </body>
+</html>

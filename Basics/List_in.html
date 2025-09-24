@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+
+    <body>
+        <h1><strong>List in HTML</strong></h1>
+        <p>There are two primary types of lists in HTML. The <strong>unordered</strong> list (&lt;ul&gt;), which is used for collections where sequence does not matter, and <strong>ordered</strong> list (&lt;ol&gt;) where sequence does not matter.
+        <p>Both of these lists use the element <strong>list item</strong> (&lt;li&gt;) for each item in the list. </p>
+        <h3>Unordered List</h3>
+        <p>Dinners for the Week</p>
+         <ul>
+        <li>Hamburger Helper</li>
+        <li>Seafood</li>
+        <li>Chicken Alfredo</li>
+        <li>Tacos</li>
+        <li>Deli Sandwhich</li>
+    </ul>
+    <h3> Ordered List</h3>
+        <ol>
+        <li>Wake Up</li>
+        <li>Brush Teeth</li>
+        <li>Eat Breakfast</li>
+        <li>Get Dresses</li>
+        <li>Head to School</li>
+        </ol>
+    <h2>Tables</h2>
+    <p>Tables allow you to organize data in rows & columns. Semantically, "header" rows should include in the &lt;thead&gt; and the main section of the table should be in a &lt;tbody&gt; element. </p>
+    <p>Notice that &lt;th&gt; elements automatically bold the content. These should be used for header cells. The &lt;caption&gt; element in a table gives a caption to the table which is displayed above the<br>table by default. Each row is denoted by the &lt;tr&gt; element, with &lt;td&gt; and &lt;th&gt; elements residing within each row.  </p>
+    <p>One of the harder aspects to msater in HTML Tables is the <em>rowspan</em>, which casues the cell to span vertically over rows, and the <em>colspan,</em> which causes the cell to span horizontally over<br>columns.</p>
+
+    <table border="1">
+        <captain>Family Tree</captain>
+
+        <tr>
+            <th>Student</th>
+            <th rowspan="2">Quizzes</th>
+            <th>Average</th>
+            <th> </th>
+        </tr>
+
+        <tr>
+            <th>last name</th>
+            <th>first name</th>
+            <th>realtionship</th>
+        </tr>
+       
+        <tr>
+            <td rowspan="3">bob</td>
+            <td>jim</td>
+            <td>dad</td>
+        </tr>
+
+        <tr>
+            <td>sally</td>
+            <td>mom</td>
+        </tr>
+
+        <tr>
+            <td>labron
+            <td>daughter</td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>labron
+            <td>daughter</td>
+            </td>
+        </tr>
+    
+
+
+    </table>
+    
+    
+</html>

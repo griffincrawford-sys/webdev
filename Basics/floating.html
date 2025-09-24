@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Floating Elements</title> 
+         
+         <style>
+            .floatImage {
+                padding: 20px;
+                border: 1px solid #333;
+            }
+
+            /* clearfix */
+            .floatImage::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .floatImage img {
+                width: 200px;
+                float: right;
+            }  
+            
+            .divFloat {
+                background-color: #333;
+                width: 33.3333%;
+                height: 200px;
+                float: left;
+            }
+
+            .float2 { background-color: #ccc;}
+         </style>
+    </head> 
+    
+    <body>
+        <div class="floatImage">
+        <img src="img/FernandoSucre.webp" alt="FernandoSucre">
+
+        <p>Fernando Sucre is a fictional character from the TV series Prison Break, portrayed by actor Amaury Nolasco. He is Michael Scofield's cellmate at Fox River State Penitentiary and becomes a loyal ally in the escape plan, driven by his desire to reunite with his girlfriend, Maricruz. Sucre is known for his warmth, humor, and unwavering loyalty, providing emotional depth and a contrast to the series' intense drama</p>
+    </div>
+
+    <div class="divFloat"></div>
+    <div class="divFloat float2"></div>
+    <div class="divFloat"></div>
+
+    </body>
+</html>

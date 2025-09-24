@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(216, 0, 0);
+            padding: 60px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(128, 0, 0);
+        }
+
+        nav a {
+            padding: 14px 20px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a: hover {
+            backround-color: rgb(128, 0, 0);
+            color: #fff;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            flex: 30%;
+            background-color: #efefef;
+            padding: 20px;
+        }
+
+        main {
+            flex: 70%;
+            padding: 20px;
+        }
+
+        .fake_image {
+            background-color: #333;
+            width: 100%;
+            padding: 20px;
+            color: #ccc;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: darkblue;
+            color: #fff;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+            nav,
+            .flex {
+                flex-direction: coloun;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Layout</h1>
+        <p>Resize your browser to see this page respond!</p>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <div class="flex">
+        <aside>
+            <h2>About Me</h2>
+            <h5>Photo of Me</h5>
+            <div class="fake_image" style="height: 200px">Image</div>
+            <p>tfgykut6i7r5uedrtfyg frtugyutifjygkh tifuyjgk hgityf huiy gitufyg t8fur6ygv bht68rfugy </p>
+
+            <h3>Sub Header</h3>
+            <p>bh78r56ftuhy7frtu6yg7t6r5ftuyg768rfu giyh 7t6fugy ut fugyh ituf gyh tiufg furv gbyht6 8frucdyhgtvfurytc ugvyt ufrgvyb htfur chgvjhybi tufr vgjhby tfugvjhb uygtuf gvjyh 7tguyf vgjhy gtu hgt ufgjhb ytiuf vjhy tfur vgyt frgvy tuf vgjhy tufvgj hy tbh78r56ftuhy7frtu6yg7t6r5ftuyg768rfu giyh 7t6fugy ut fugyh ituf gyh tiufg furv gbyht6 8frucdyhgtvfurytc ugvyt ufrgvyb htfur chgvjhybi tufr vgjhby tfugvjhb uygtuf gvjyh 7tguyf vgjhy gtu hgt ufgjhb ytiuf vjhy tfur vgyt frgvy tuf vgjhy tufvgj hy t</p>
+
+            <div class="fake_image" style="height: 75px">Image</div>
+            <div class="fake_image" style="height: 75px">Image</div>
+            <div class="fake_image" style="height: 75px">Image</div>
+        </aside>
+
+        <main>
+            <h2>Title Heading</h2>
+            <h5>Title Description <span>September 11th, 2025</span></h5>
+
+            <div class="fake_image" style="height: 400px">Image</div>
+
+            <p>yuy67tfruygiuitf ru6dy5thc fgjvhkyftur 65de74ys rtxgfhcgjv yfturdey5srtxfhctjuyi6r 57e4dychtfgjvyti768r5edych ftgjvyit7 68r5e4dyth cftgjvyi6 r57edytchfgjvkb7 t68r5deycxhfg jvy7t6 8r54edrst yxfchgjvky78t69r54ed yftcgjvy78r564ed ytcf hgjvy789tfrud 678rdfyyfch u6789frdcyg67 etyfgtyeqygftfr e3y7itgfer fg7fter7 frefg ervg yrefg yrewfgreuifgreiufivreyfgreuifrev</p>
+
+            <p>yuy67tfruygiuitf ru6dy5thc fgjvhkyftur 65de74ys rtxgfhcgjv yfturdey5srtxfhctjuyi6r 57e4dychtfgjvyti768r5edych ftgjvyit7 68r5e4dyth cftgjvyi6 r57edytchfgjvkb7 t68r5deycxhfg jvy7t6 8r54edrst yxfchgjvky78t69r54ed yftcgjvy78r564ed ytcf hgjvy789tfrud 678rdfyyfch u6789frdcyg67 etyfgtyeqygftfr e3y7itgfer fg7fter7 frefg ervg yrefg yrewfgreuifgreiufivreyfgreuifre jgruvruhv8 rfurirfvgr vrb irgfue huhr if rhjr igheiuf</p>
+
+            <p>yuy67tfruygiuitf ru6dy5thc fgjvhkyftur 65de74ys rtxgfhcgjv yfturdey5srtxfhctjuyi6r 57e4dychtfgjvyti768r5edych ftgjvyit7 68r5e4dyth cftgjvyi6 r57edytchfgjvkb7 t68r5deycxhfg jvy7t6 8r54edrst yxfchgjvky78t69r54ed yftcgjvy78r564ed ytcf hgjvy789tfrud 678rdfyyfch u6789frdcyg67 etyfgtyeqygftfr e3y7itgfer fg7fter7 frefg ervg yrefg yrewfgreuifgreiufivreyfgreuifre</p>
+        </main>
+    </div>
+
+    <footer>
+        <h3>This is my foot</h3>
+    </footer>
+</body>
+</html>
