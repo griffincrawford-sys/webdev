@@ -15,7 +15,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     * { box-sizing: border-box;}
-ass
+
     body {
       font-size: 15px;
       font-family: "Lexend Deca", sans-serif;
@@ -23,19 +23,65 @@ ass
 
     h2 {
       font-family: "Big Shoulders", sans-serif;
+      text-transform: uppercase;
+      color:  hsl(0, 0%, 95%);
+      font-size: 2.5rem;
+    }
+
+    p {
+      line-height: 1.7em;
+      margin-bottom: 100px;
     }
 
     .container {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
     }
+
+    .card{
+      color: hsla(0, 0%, 100%, 0.75);
+      width: 305px;
+      padding: 50px;
+      }
+
+      .card a {
+        background-color:  hsl(0, 0%, 95%);
+        padding: 12px 32px;
+        border: 2px solid  hsl(0, 0%, 95%);
+        border-radius: 30px;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        background-color: transparent;
+        color: hsl(0, 0%, 95%);
+      }
+
+    .sedan {background-color: hsl(31, 77%, 52%); border-top-left-radius: 8px; border-bottom-left-radius: 8px;}
+    .suv {background-color: hsl(184, 100%, 22%)}
+    .luxury { background-color: hsl(179, 100%, 13%); border-top-right-radius: 8px; border-bottom-right-radius: 8px;}
+
+    .sedan a { color: hsl(31, 77%, 52%);}
+    .suv a { color: hsl(184, 100%, 22%);} 
+    .luxury a { color: hsl(179, 100%, 13%);}
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a:hover { color:  hsl(31, 77%, 52%); border-color:  hsl(31, 77%, 52%);}
+
+    @media screen and (max-width: 900px) {
+      .container {flex-direction: column;}
+      .sedan { border-bottom-left-radius: 0; border-top-right-radius: 8px;}
+      .luxury { border-top-right-radius: 0; border-bottom-left-radius: 8px;}
+    }
+
   </style>
 </head>
 <body>
   <div class="container">  
-    <div class="card">
+    <div class="card sedan">
       <img src="images/icon-sedans.svg" alt="Sedans Icon">
       <h2>Sedans</h2>
       <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
@@ -43,7 +89,7 @@ ass
       <a href="#">Learn More</a>
   </div>
 
-    <div class="card">
+    <div class="card suv">
       <img src="images/icon-suvs.svg" alt="SUV Icon">
       <h2>SUVs</h2>
       <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
@@ -51,7 +97,7 @@ ass
       <a href="#">Learn More</a>
     </div>
 
-    <div class="card">
+    <div class="card luxury">
       <img src="images/icon-luxury.svg" alt="Luxury Icon">
       <h2>Luxury</h2>
       <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
@@ -62,7 +108,7 @@ ass
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/griffincrawford-sys">Griffin Crawford</a>.
   </div>
 </body>
 </html>
