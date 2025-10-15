@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destination</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            padding: 12px 50px;       
+        }
+
+        nav a {
+            color: goldenrod;
+        }
+
+        nav img { width: 70px; }
+        nav a:first-of-type { margin-left: auto;}
+        nav a.login_button {
+            border: 1px solid goldenrod;
+            padding: 8px 16px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background-color: rgb(91, 114, 137);
+            padding: 30px;
+            border: 3px solid goldenrod;
+            color: goldenrod;
+        }
+
+        header div {width: 50%;}
+        header img {width: 100%;}
+        header .image {
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        aside img {
+            height: 265px;
+            width: 265px;
+            border-radius: 50%;
+            padding: 50px; 
+            align-content: center;   
+            align-items: center;  
+        }
+        
+        aside {
+            align-content: center;
+            align-items: center;
+        }
+
+       .card {
+        color: hsla(0, 0%, 100%, 0.75);
+        width: 305px;
+        padding: 50px;
+       }
+
+        .card {
+            display: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            padding: 12px;               
+            width: 100%;
+            height: 300px;                
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            background-image: url("img/Georgia_Logo copy.png");
+
+                   }
+
+        .card div {
+            margin-top: 200px;
+            border-radius: 10px;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            padding: 12px;
+        }
+
+        .card a {
+            display: block;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 8px;
+
+        }
+
+        .card a:hover,
+            .card a:focus {
+                background-color: rgb(255, 255, 255);
+                color: rgb(223, 0, 0);
+            }
+            
+        .cardsContainer {
+            display: flex;
+            
+        }
+    
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="img/colosseum-2.png" alt="Colosseum">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Destinations</a>
+        <a href="#">Sell</a>
+        <a href="#">Contact</a>
+        <a href="#" class="login_button">Login/Sign Up</a>
+    </nav> 
+
+
+    
+    <header>
+        <div>
+            <h1>Rome Destination</h1>
+            <p>Fascinating Roman Capital! The city of Rome is called `The Eternal City,` and it is clear to see why. With centuries of fascinating history, religious heritage, secrets and myths, and leading the fields of art, culture, and food, it is no wonder people flock here time after time!</p>
+            <a href="#">Book Now</a>
+        </div>
+        <div class="image">
+            <img src="img/zWy2ezQgTQkBW8hz9sbedH.jpg" alt="City of Rome">       
+        </div>
+    </header>
+    <aside>
+        <img src="img/GettyImages-1380534040.jpg.webp" alt="City of Rome">
+        <img src="img/istockphoto-539115110-612x612.jpg" alt="Rome">
+        <img src="img/Italy_Venice_Venice-landscape_Landscape-Italy-Venice_Dreamstime_40423012_Linghui-Kong_HERO.jpg" alt="venice italy">
+        <img src="img/Principais-cidades-da-Italia-2.webp" alt="Italy">
+        <img src="img/TAL-florence-ITCITIES0924-6aada9377bca4896a4338ab8950cca39.jpg" alt="Florence Italy">      
+        
+        
+    </aside>
+</body>
+</html>
