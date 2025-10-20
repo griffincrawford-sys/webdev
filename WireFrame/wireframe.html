@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porshe Design</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        nav {
+            size: 90px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            padding: 12px 50px;      
+        }
+
+        nav a {
+            size: 90px;
+            text-decoration: none;
+            color: rgb(173, 0, 0);
+        }
+
+         nav img { width: 70px; }
+        nav a:first-of-type { margin-left: auto;}
+        nav a.login_button {
+            border: 1px solid rgb(173, 0, 0);
+            padding: 8px 16px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            border: 3px solid rgb(0, 0, 0);
+            color: rgb(224, 182, 75);
+        }
+
+        header div {width: 50%;}
+        header img {width: 100%;}
+        header .image {
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        aside img {
+            height: 265px;
+            width: 265px;
+            border-radius: 50%;
+            padding: 50px; 
+            align-content: center;   
+            align-items: center;  
+        }
+        
+        aside {
+            align-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="img/pngimg.com - porsche_logo_PNG1.png">
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Design</a>
+        <a href="#">Buy</a>
+        <a href="#">Login/Sign Up</a>
+    </nav>
+
+    <header>
+        <div>
+            <h1>&nbsp;Porshe GT3 RS</h1>
+            
+            <p>The Porsche 911 GT3 RS is a high-performance, track-focused<br>sports car known for its aerodynamic efficiency,<br>lightweight construction, and powerful engine.<br>It features a 4.0-liter flat-six engine,<br>aggressive aerodynamics including a large<br>rear wing with a Drag Reduction System (DRS),<br>and extensive use of lightweight materials like carbon fiber.</p>
+            <a href="#" class="login_button">Login/Sign Up</a>
+        </div>
+    </header>
+    
+</body>
+
+</html>
