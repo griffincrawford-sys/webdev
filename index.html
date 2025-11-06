@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Griffin Carwford's Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+
+
+header {
+    background-color: #650000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+#class-projects {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#class-projects h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.frontendmentor-section {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.frontendmentor-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #690000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
+
+</style>
+
+<body>
+    <header>
+        <h1>Griffin Carwford's Dev Portfolio</h1>
+        <p>Welcome to my web development journey, showcasing my projects and growth in HTML, CSS, and more!</p>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="#class-projects">Class Projects</a></li>
+            <li><a href="#frontendmentor-projects">FrontendMentor Projects</a></li>
+            <li><a href="#contact">Contact/About</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section id="class-projects">
+            <h2>FrontendMentor Projects</h2>
+            <div class="project">
+                <h3>Project 1: Social Link profile</h3>
+                <p>Demonstrated cards and CSS.</p>
+                <a href="file:///Users/griffincrawford/Documents/webdev/FrontendMentor/social_link_profile/social-links-profile-main/index.html" target="_blank">Social Link</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Three Column Design</h3>
+                <p>Explored the use Columns and how to properly space and align content.</p>
+                <a href="file:///Users/griffincrawford/Documents/webdev/FrontendMentor/3-column-preview-card-component-main/index.html#" target="_blank">Design Link</a>
+            </div>
+   
+        </section>
+
+
+        <section id="frontendmentor-projects" class="frontendmentor-section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Vacation</h3>
+                <p>Showed off use of cards and border-radius.</p>
+                <a href="file:///Users/griffincrawford/Documents/webdev/Vacation/vacation.html" target="_blank">Vacation Link</a>
+            </div>
+            <div class="project">
+                <h3>Perfect Meal</h3>
+                <p>We used tables and link to show nutrition facts and recipes.</p>
+                <a href="file:///Users/griffincrawford/Documents/webdev/Basics/My_Perfect_Meal.html" target="_blank">Meal Link</a>
+            </div>
+            <div class="project">
+                <h3>WireFrame</h3>
+                <p>This incorperated a lot of navagation and design layout.</p>
+                <a href="file:///Users/griffincrawford/Documents/webdev/WireFrame/wireframe.html" target="_blank">Link</a>
+            </div>
+     
+        </section>
+    </main>
+
+
+    <footer id="contact">
+        <p>&copy; 2025 Griffin Crawford</p>
+        <p>Contact: <a href="griffin.crawford@cougarmail.email">griffin.crawford@cougarmail.email</a></p>
+    </footer>
+</body>
+
+</html>
