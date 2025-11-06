@@ -11,17 +11,9 @@
 
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: #333;
     padding: 20px;
 }
@@ -34,10 +26,6 @@ header {
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 2.5em;
 }
 
 header p {
@@ -54,13 +42,13 @@ nav ul {
 }
 
 nav ul li a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    color: #000000;
+    color: #ff0000;
 }
 
 section {
@@ -107,12 +95,13 @@ section {
 }
 
 .project a {
-    color: #008CBA;
+    color: #2cc7ff;
     text-decoration: none;
 }
 
 .project a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #650000;
 }
 
 
@@ -134,17 +123,12 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: unset;
 }
 
-@media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
-    }
-
-    .project {
-        text-align: center;
     }
 
     header h1 {
@@ -154,21 +138,21 @@ footer a:hover {
     header p {
         font-size: 1em;
     }
-}
+
 
 </style>
 
 <body>
     <header>
         <h1>Griffin Carwford's Dev Portfolio</h1>
-        <p>Welcome to my web development journey, showcasing my projects and growth in HTML, CSS, and more!</p>
+        <p>Welcome to my web development journey, showing my projects and growth in HTML, CSS, and more! It took a little bit to learn but I am doing a little better.</p>
     </header>
 
 
     <nav>
         <ul>
-            <li><a href="#class-projects">Class Projects</a></li>
-            <li><a href="#frontendmentor-projects">FrontendMentor Projects</a></li>
+            <li><a href="#class-projects">FrontendMentor Projects</a></li>
+            <li><a href="#frontendmentor-projects">Class Projects</a></li>
             <li><a href="#contact">Contact/About</a></li>
         </ul>
     </nav>
@@ -208,6 +192,11 @@ footer a:hover {
                 <h3>WireFrame</h3>
                 <p>This incorperated a lot of navagation and design layout.</p>
                 <a href="file:///Users/griffincrawford/Documents/webdev/WireFrame/wireframe.html" target="_blank">Link</a>
+            </div>
+            <div class="project">
+                <h3>Card Layout.</h3>
+                <p>This was one of my first projects and was very confused on how to make cards but now im much better.</p>
+                <a href="file:///Users/griffincrawford/Documents/webdev/CardLayout/Card_Layout2.html" target="_blank">Card Link</a>
             </div>
      
         </section>
