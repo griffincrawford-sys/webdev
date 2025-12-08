@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f4f6;
+        height: 100vh;
+        margin: 0;
+    } 
+
+    .header {
+        padding: 40px;
+        text-align: left;
+        width: 50%;
+        font-family: "Karla", sans-serif;
+    }
+
+    .card {
+        background: #ffffff;
+        width: 800px;
+        margin: 30px auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+    }
+
+    h1 {
+      color: hsl(179, 62%, 43%);
+      font-family: "Karla", sans-serif;
+    }
+
+    h2 {
+      color: hsl(179, 62%, 43%);
+      font-family: "Karla", sans-serif;
+      text-decoration: none;
+    }
+
+    h3 {
+       color: hsl(204, 43%, 93%);
+       font-family: "Karla", sans-serif;
+       text-decoration: none;
+    }
+
+    .greentext {
+      color: hsl(71, 73%, 54%);
+      font-family: "Karla", sans-serif;
+    }
+
+    p {
+      color: hsl(218, 22%, 67%);
+      font-family: "Karla", sans-serif;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 30px;
+    }
+    
+    .bottom {
+            background: hsl(179, 62%, 43%) ;
+            color: hsl(204, 43%, 93%);
+            padding: 0px;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            
+        }
+
+    .bottomright {
+            background: hsl(179, 62%, 50%) ;
+            text-decoration: none;
+             border-radius: 0 0 10px 10px;
+        }
+
+    .price {
+            font-size: 30px;
+            font-weight: bold;
+      }
+
+    .fullaccess {
+      color: hsl(204, 43%, 93%);
+    }
+
+    nav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 80px;
+          padding: 12px 50px;       
+        }
+
+    nav a {
+          color: hsl(204, 43%, 93%);
+          text-decoration: none;
+      }
+
+
+      nav img { width: 70px; }
+      nav a:first-of-type { margin-left: auto;}
+      nav a.login_button {
+          border: 1px solid hsl(71, 73%, 54%);
+          padding: 0px 95px;
+          background-color: hsl(71, 73%, 54%);
+          border-radius: 7px 7px 7px 7px;
+          font-size: 16px;
+          margin-top: 10px;
+        }
+
+    .month {
+      color:  hsl(204, 43%, 93%);
+    }
+
+    ul {
+      color: hsl(204, 43%, 93%);
+      list-style-type: none;
+    }
+    
+    li {
+      color: hsl(204, 43%, 93%);
+      list-style-type: none;
+    }
+   
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+
+    <h1>Join our community</h1>
+
+    <h3 class="greentext">30-day, hassle-free money back guarantee</h2>
+
+    <p>Gain access to our full library of tutorials along with expert code reviews. 
+    Perfect for any developers who are serious about honing their skills.</p>
+  </div>
+
+  <div class="bottom">
+  
+    <div class="header">
+      <h3>Monthly Subscription</h3>
+
+      <h3 class="price">&dollar;29 <span style="font-size:16px; font-weight:normal; color:  hsl(204, 43%, 93%);">per month</span></h3> 
+      
+    <div class="month">
+
+     
+
+      <p class="fullaccess">Full access for less than &dollar;1 a day</p>
+      <nav>
+        <a href="#" class="login_button">Sign Up </a>
+      </nav>
+    </div>
+ </div>
+    
+    <div class="header bottomright">
+      <h3>Why Us</h3>
+      
+        <li>Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      
+    </div>
+  </div>
+</div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/griffincrawford-sys">Griffin Crawford</a>.
+    </p>
+  </footer>
+  </body>
+  </html>
