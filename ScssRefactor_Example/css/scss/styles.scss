@@ -1,0 +1,76 @@
+/* REPETITIVE COLORS */
+
+$primary-color: #6c5ce7;
+$secondary-color: #a29bfe;
+
+
+.header h1 { color: #ffffff; font-family: 'Poppins', sans-serif; }
+
+/* REPETITIVE FLEXBOX CODE */
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+
+  h1 {
+    color: #ffffff;
+    font-family: $font-primary;
+  }
+
+  nav {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 15px;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.profile-card {
+    @include flex-center;
+    border: $primary-color;
+    padding: 20px;
+}
+
+.contact-box {
+    @include flex-center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/* DEEP NESTING & MODIFIERS */
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    background-color: $primary-color;
+    color: #ffffff;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+
+
+    }
+  }
+  
+   &--secondary {
+    background-color: $secondary-color;
+    color: $white;
+
+    &:hover {background-color: $primary-color;}
+    }
+  }

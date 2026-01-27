@@ -1,0 +1,63 @@
+/* REPETITIVE COLORS */
+.header {
+  background-color: #6c5ce7;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.header nav a:hover {
+  color: #a29bfe;
+}
+
+/* REPETITIVE FLEXBOX CODE */
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: #6c5ce7;
+  padding: 20px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+/* DEEP NESTING & MODIFIERS */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4834d4;
+}
+
+.btn-secondary {
+  background-color: #a29bfe;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #6c5ce7;
+}

@@ -1,0 +1,92 @@
+// Variables
+$primary-color: rgb(9, 120, 255);
+$secondary-color: rgb(78, 172, 34);
+$dark-text: rgb(0, 2, 39);
+$rounded: 8px;
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(235, 230, 210);
+    margin: 0;
+}
+
+
+// Mixin - reusable "funtions" for CSS blocks
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+
+// Nesting
+.myHeader {
+    @include flex-center;  // using the mixin
+    background-color: $dark-text;
+    color: white;
+    padding: 40px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    
+
+    .card {
+        background-color: whitesmoke;
+        padding: 20px;
+        border-radius: $rounded;
+        box-shadow: 0 4px 6px rgb(0, 0, 54);
+        transition: tranform 0.3s ease;
+        width: 100%;
+    
+        
+
+        // PARENT SELECTOR (&)
+        &:hover {
+            transform: translateY(-5px);
+            
+            
+        }
+
+        h3 {
+            color: $primary-color;
+            
+        }
+
+        a {
+            background-color: $primary-color;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: calc($rounded - 2px);
+            text-decoration: none;
+            
+           
+           
+        }
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+
+        &.featured {
+            border: 2px solid $secondary-color;
+            h3 {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
