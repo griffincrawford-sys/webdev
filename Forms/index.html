@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <style>
+        .title {
+            color: rgb(122, 0, 0);
+            text-align: center;
+            font-family: sans-serif;
+            size: 900px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            color: rgb(122, 0, 0);
+        }
+
+        input {
+            background-color: rgb(237, 237, 237);
+            padding: 8px 14px;
+            font-size: 1.2rem;
+            border: 1px solid rgb(69, 69, 69);
+            width: 300px;
+        }
+
+        textarea {
+            min-width: 50px;
+            min-height: 50px;
+            max-width: 300px;
+            max-height: 300px;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(237, 237, 237);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Youth Football Camp</h1>
+
+    <h1 class="contact">Contact Us</h1>
+
+     <div class="flex">
+            <div>
+                <label for="Username">Name</label><br>
+                <input type="text" name="Username" id="Username" placeholder="Name" maxlength="10" required>
+            </div>
+
+     <div class="flex">
+            <div>
+                <label for="Email">Email</label><br>
+                <input type="text" name="Email" id="Email" placeholder="example@email.com" maxlength="10" required>
+            </div>
+
+     <div class="flex">
+            <div>
+                <label for="message">message</label><br>
+                <textarea name="message" id="message" placeholder="Enter a Message..." rows="5" ></textarea>
+            </div>
+
+
+    
+</body>
+</html>
