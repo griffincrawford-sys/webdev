@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+
+<style>
+
+button {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1 id="hsl"></h1>
+        <button onclick="genColor()">New Color</button>
+
+    <script>
+        // store a reference to the h1
+        const h1 = document.getElementById("hsl");
+
+        function genColor() {
+            // hsl(170, 78%, 67%)
+            let color = Math.floor(Math.random() * 361); // random color value between 0 and 360
+
+            let saturation = Math.floor(Math.random() * 101);
+
+            let lightness = Math.floor(Math.random() * 101);
+
+            let hslCode = "hsl(" + color + ", " + saturation + "%, " + lightness + "%)";
+
+            h1.innerText = hslCode;
+            document.body.style.backgroundColor = hslCode;
+        }
+    </script>
+
+</body>
+
+
+</html>
+
+
+<!--
+Hex codes are written as #RRGGBB
+Hex values are between 0-F
+ 0-9, 10=A, 11=B...15=F
+-->
+
+<!--
+HSL (COLOR (0-360), SATURATION (0-100%), LIGHTNESS (0-100%))
+-->
+
