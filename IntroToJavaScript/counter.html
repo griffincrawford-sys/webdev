@@ -7,9 +7,62 @@
 
     <style>
 
+        .input-container {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .input-container input,
+        .input-container label {
+            cursor: pointer;
+        }
+
+        .input-container label:hover {
+            font-weight: bold;
+        }
+
+        #sidebar {
+            position: absolute;
+            left: -360px;
+            top: 25%;
+            display: flex;
+            width: 400px;
+            flex-direction: row;
+            gap: 30px;
+            transition: left 1s ease;
+            padding-left: 25px;
+            background-color: rgb(86, 63, 254);
+        }
+
+        #sidebar button {
+            writing-mode: sideways-lr;
+            min-width: 40px;
+            max-width: 40px;
+            font-size: 1.4rem;
+        }
+
     </style>
 </head>
 <body>
+
+    <div id="sidebar">
+        <div>
+            <h2>This is Imfo</h2>
+            <p>Reprehenderit magna laboris Lorem ipsum nostrud dolor laboris aliqua irure occaecat est. Sit dolor aute consectetur duis tempor velit pariatur magna et esse non. Ad aute consectetur incididunt dolore. Aute labore est veniam sunt do eu aute fugiat velit fugiat eu. Consectetur nostrud mollit anim pariatur do nisi proident sunt Lorem nulla in occaecat ut. Aliqua non irure laborum ad commodo duis culpa deserunt veniam Lorem duis. Voluptate aliquip ipsum deserunt ex id culpa aute ex qui sint elit.</p>
+        </div>
+        <button id="sidebarButton" onclick="toggleSidebar()">Open</button>
+    </div>
+
+    <div class="input-container">
+        <input type="checkbox" id="modeSwitch">
+        <label id="modeSwitchLabel" for="modeSwitch" onclick="switchMode()">Light Mode</label>
+    </div>
+    <!-- checkbox.checked -->
+
+
     <div class="container">
         <button onclick="decrease()">-</button>
         <span id="count">0</span>
@@ -17,6 +70,21 @@
     </div>
 
     <script>
+        const modeSwitch = document.getElementById("modeSwitch")
+
+        function switchMode() {
+            if (modeSwitch.checked) {
+                document.body.style.backgroundColor = "hsl(0, 0%, 0%)";
+                document.body.style.color = "hsl(0, 0%, 100%)";
+                modeSwitchLabel.innerText = "Dark Mode"
+            } else {
+                document.body.style.backgroundColor = "hsl(0, 0%, 100%)";
+                document.body.style.color = "hsl(0, 0%, 0%)";
+                modeSwitchLabel.innerText = "Light Mode"
+            }
+        }
+
+
         const span = document.getElementById("count")
 
         let count = 0;
@@ -25,18 +93,29 @@
 
             count++;
 
-            document.getElementById("count").textContent = count;
-
+            span.innertext = count;
         }
 
         function decrease() {
 
             count--;
 
-            document.getElementById("count").textContent = count;
-            
+            span.innertext = count;
+
         }
 
+        const sidebar = document.getElementById("sidebar")
+        const sidebarButton = document.getElementById("sidebarButton")
+
+        function toggleSidebar() {
+            if ("close == open") {
+                sidebarButton.innerText = "Close"
+            } else {
+                sidebarButton.innerText = "Open"
+            }
+        }
+    
+ 
 
     </script>
 

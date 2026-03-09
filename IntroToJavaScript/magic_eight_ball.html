@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+</head>
+<body>
+    <h1>Magic 8 Ball</h1>
+    <p id="response">Click the button below to ask the magic 8 ball a question!</p>
+    <button onclick="getResponse()">Ask</button>
+
+    <script>
+        const responseParagraph = document.getElementById("response");
+        const responses = [
+            "Yes.",                 // index 0
+            "No.",                  // index 1          
+            "Maybe.",               // index 2
+            "Ask again later",      // index 3
+            "Definitely.",          // index 4
+            "Unlikely."             // index 5
+        ];
+
+        function getResponse() {
+            let randomNumber = Math.floor(Math.random() * responses.length);
+            responseParagraph.innerText = responses[randomNumber];
+        }
+    
+    </script>
+</body>
+</html>

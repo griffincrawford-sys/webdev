@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell a Complement</title>
+</head>
+<body>
+
+    <style>
+        h1 {
+            color: rgb(74, 74, 179);
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            
+        }
+
+        button {
+            color: rgb(255, 255, 255);
+            background-color: rgb(181, 55, 55);
+            border-radius: 12px;
+            width: 200px ;
+            margin: 30px auto;
+            display: block;
+            padding: 20px;
+            font-size: large;
+            
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+    </style>
+
+    <h1>Complements</h1>
+    <p id="response">Click the button below to get a random complement!</p>
+    <button onclick="getResponse()">Ask</button>
+
+    <script>
+        const responseParagraph = document.getElementById("response");
+        const responses = [
+            "Your very nice.",                 // index 0
+            "Your very smart.",                // index 1          
+            "You look good today.",            // index 2
+            "I like your shirt",               // index 3
+            "I like your hair.",               // index 4
+            "I like your shoes.",              // index 5
+            "You did a good job.",             // index 6
+            "good job.",                       // index 7
+            "Your funny.",                     // index 8  
+            "nice shirt.",                     // index 9 
+            "nice socks." ,                    // index 10
+        ];
+
+        function getResponse() {
+            let randomNumber = Math.floor(Math.random() * responses.length);
+            responseParagraph.innerText = responses[randomNumber];
+        }
+    
+    </script>
+</body>
+</html>
