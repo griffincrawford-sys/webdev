@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<style>
+
+    h1{
+        text-align: center;
+
+    }
+    
+     * {box-sizing: border-box;}
+
+        #addHere {
+            border: 1px solid #677;
+            border-radius: 8px;
+            background-color: white;
+            min-height: 300px;
+            padding: 20px 12px;
+            margin: 20px 0;
+           
+            
+            
+        }
+
+        #addHere div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #addHere div a {
+            font-weight: 700;
+            color: rgb(0, 0, 185);
+        }
+
+        #addHere div a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        
+        
+
+</style>
+<body>
+    <h1>To Do</h1>
+
+    <input type="text" id="txtAdd">
+    <button onclick="add()">Add</button>
+
+    <h2>Active</h2>
+
+    <div id="addHere"></div>
+
+    <element [attributes]>
+    <input type="checkbox" id="check"> 
+    <label for="check">check</label>
+    </element>
+   
+
+            <script>
+                const txtAdd = document.getElementById("txtAdd");
+                const addHere = document.getElementById("addHere");
+
+                
+
+                // keep track of last second
+                let lastSecond = -1;
+
+                // keep track of last id
+                let nextId = 0;
+
+                function add() {
+                    // quit this function if the textbox is empty
+                    if (txtAdd.value == "") {
+                        return;
+                    }
+
+                    
+
+                    // if a message was already posted this second; dont run
+                    
+                
+                    // create containing div
+
+                    
+                     
+
+                    
+                    const div = document.createElement("div");
+                    div.id = "message" + nextId;
+
+                    
+
+                    // create a paragraph element
+                    const paragraph = document.createElement("label");
+                    
+
+                    const checkbox = document.createElement('input');
+                    checkbox.setAttribute("type","checkbox")
+                    div.id = "check" + "message"
+
+                    // add HTML to the paragraph
+                    paragraph.innerHTML = txtAdd.value;
+
+                    // add the new paragraph to the div
+                    div.appendChild(checkbox);
+                    div.appendChild(paragraph);
+
+                    const textbox = document.createElement("input")
+                    textbox.setAttribute("type" , "text")
+                    div.appendChild(textbox);
+                    
+                    const doneLink = document.createElement("a");
+                    doneLink.href = "#";
+                    doneLink.innerText = "Done"
+                    doneLink.onclick = function(e) {
+                        e.preventDefault();
+                    }
+                    div.appendChild(doneLink);
+                    
+
+                    const editLink = document.createElement("a")
+                    editLink.href = "#"
+                    editLink.innerText = "[Edit]";
+                    editLink.onclick = function(e) {
+                        e.preventDefault();
+                        document.getElementById(div.id).edit();
+                    }
+                    div.appendChild(editLink);
+
+
+                    // add a delete link
+                    const deleteLink = document.createElement("a")
+                    deleteLink.href = "#"
+                    deleteLink.innerText = "[delete]";
+                    deleteLink.onclick = function(e) {
+                        e.preventDefault();
+                        document.getElementById(div.id).remove();
+                    }
+                    div.appendChild(deleteLink);
+
+                    // add the new paragraph element to the DOM (Document Object Model)
+                    addHere.appendChild(div);
+
+                    // change the last second posted
+                    lastSecond = date.getSeconds();
+
+                    // clear the textbox
+                    txtAdd.value = "";
+
+                    // increment last id
+                    nextId = nextId + 1;
+            
+                }
+            </script>
+
+    
+</body>
+</html>

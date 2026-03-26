@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Elements in JavaScript</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        #addHere {
+            border: 1px solid #677;
+            border-radius: 8px;
+            background-color: white;
+            min-height: 300px;
+            padding: 20px 12px;
+            margin: 20px 0;
+        }
+
+        #addHere div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #addHere div:nth-child(even) {
+            background-color: rgb(141, 129, 206);
+        }
+
+        #addHere div a {
+            font-weight: 700;
+            color: rgb(0, 0, 185);
+        }
+
+        #addHere div a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Creating Elements in JavaScript</h1>
+
+   <input type="text" id="txtAdd">
+    <button onclick="add()">Add</button>
+
+    <div id="addHere"></div>
+
+            <script>
+                const txtAdd = document.getElementById("txtAdd");
+                const addHere = document.getElementById("addHere");
+
+                // keep track of last second
+                let lastSecond = -1;
+
+                // keep track of last id
+                let nextId = 0;
+
+                function add() {
+                    // quit this function if the textbox is empty
+                    if (txtAdd.value == "") {
+                        return;
+                    }
+
+                    //get the current date
+                    let date = new Date(); 
+
+                    // if a message was already posted this second; dont run
+                    if (date.getSeconds() == lastSecond) {
+                        return; 
+
+                    }
+                
+                    // create containing div
+                    const div = document.createElement("div");
+                    div.id = "message" + nextId;
+
+                    // create a paragraph element
+                    const paragraph = document.createElement("p");
+
+                    // add HTML to the paragraph
+                    paragraph.innerHTML = "<strong>[" + date.getHours() + ":" +
+                        date.getMinutes() + "." + date.getSeconds() + "]</strong> " + 
+                        txtAdd.value;
+
+                    // add the new paragraph to the div
+                    div.appendChild(paragraph);
+
+                    // add a remove link
+                    const removeLink = document.createElement("a")
+                    removeLink.href = "#"
+                    removeLink.innerText = "[remove]";
+                    removeLink.onclick = function(e) {
+                        e.preventDefault();
+                        document.getElementById(div.id).remove();
+                    }
+                    div.appendChild(removeLink);
+
+                    // add the new paragraph element to the DOM (Document Object Model)
+                    addHere.appendChild(div);
+
+                    // change the last second posted
+                    lastSecond = date.getSeconds();
+
+                    // clear the textbox
+                    txtAdd.value = "";
+
+                    // increment last id
+                    nextId = nextId + 1;
+            
+                }
+            </script>
+
+</body>
+</html>
